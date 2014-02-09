@@ -18,4 +18,4 @@ URLs of interest:
 * http://noritake-vfd.com/gu112x16g-7003b.aspx - Page for specific display
 * http://www.noritake-elec.com/commands.htm - Command list to serve as skeleton for this project
 
-Unless otherwise stated, individuals participating in this project do not represent Noritake or Itron and the fitness of this library should not reflect on their products or services, merely our own ability to work with said products or services only. This library is presented "as-is" under an MIT license.
+Unless otherwise stated, individuals participating in this project do not represent Noritake or Itron and the fitness of this library should not reflect on their products or services, merely our own ability to work with said products or services only. This library is presented "as-is" under an MIT license and as such should include the LICENSE file if redistributed.
