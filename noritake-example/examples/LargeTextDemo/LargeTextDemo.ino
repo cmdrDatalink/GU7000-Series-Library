@@ -1,5 +1,7 @@
 #include <GU7000_Interface.h>
 #include <GU7000_Parallel.h>
+#include <SoftwareSerial.h>
+#include <GU7000_SoftwareSerial.h>
 #include <GU7000_Serial_Async.h>
 #include <GU7000_Serial_SPI.h>
 #include <GU7000_Serial_Sync.h>
@@ -24,11 +26,11 @@ Noritake_VFD_GU7000 vfd;
 void setup() {
   _delay_ms(500);           // wait for device to power up
   vfd.begin(140, 16);       // 140x16 module
+  vfd.interface(interface); // select which interface to use
   // Enter the 4-digit model class number
   // E.g. 7040 for GU140X16G-7040A
   vfd.isModelClass(7000);
   //vfd.isGeneration('B');    // Uncomment this for B generation
-  vfd.interface(interface); // select which interface to use
   vfd.GU7000_reset();       // reset module
   vfd.GU7000_init();        // initialize module
 
